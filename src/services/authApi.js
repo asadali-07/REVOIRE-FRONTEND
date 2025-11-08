@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: "http://localhost:3000/api/auth",
+  baseURL: "https://revoire-auth-1.onrender.com/api/auth",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",

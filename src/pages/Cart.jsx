@@ -72,7 +72,7 @@ const Cart = () => {
     }
 
     const response = await axios.post(
-      `http://localhost:3006/api/payments/create/${order._id}`,
+      `https://revoire-payment.onrender.com/api/payments/create/${order._id}`,
       {},
       { withCredentials: true }
     );
@@ -89,7 +89,7 @@ const Cart = () => {
       handler: async function (response) {
         try {
           await axios.post(
-            "http://localhost:3006/api/payments/verify-payment",
+            "https://revoire-payment.onrender.com/api/payments/verify-payment",
             {
               razorpayOrderId: response.razorpay_order_id,
               razorpayPaymentId: response.razorpay_payment_id,

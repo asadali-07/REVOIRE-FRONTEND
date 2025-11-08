@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: "http://localhost:3005/api/orders",
+  baseURL: "https://revoire-order.onrender.com/api/orders",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",

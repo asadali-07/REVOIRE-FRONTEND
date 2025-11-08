@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: "http://localhost:3002/api/cart",
+  baseURL: "https://revoire-cart.onrender.com/api/cart",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",

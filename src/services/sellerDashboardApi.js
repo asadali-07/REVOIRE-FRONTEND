@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3008/api/seller/dashboard",
+  baseURL: "https://revoire-seller-dashboard.onrender.com/api/seller/dashboard",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",

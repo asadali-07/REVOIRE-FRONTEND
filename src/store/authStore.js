@@ -17,7 +17,7 @@ export const useAuthStore = create((set, get) => ({
   userDetails: null,
   error: null,
   connectSocket: async () => {
-    const socket = io("http://localhost:3004", {
+    const socket = io("https://revoire-ai-buddy.onrender.com", {
       withCredentials: true,
     });
     set({ socket });

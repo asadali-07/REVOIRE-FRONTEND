@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: "http://localhost:3002/api/wishlist",
+  baseURL: "https://revoire-wishlist.onrender.com/api/wishlist",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
